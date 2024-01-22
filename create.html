@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New</title>
+    <link rel="stylesheet" href="/css/common.css">
+</head>
+<body>
+    <header id="header">
+        <div id="headcontainer" class="container">
+            <div id="logo">
+                <a href="/home.html"><h1>GEEHYUN</h1></a>
+            </div>
+            <nav id="top_menu">
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/aboutme.html">About</a></li>
+                    <li><a href="/posts.html">Posts</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/login.html">LogIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="visual" class="bg">
+        <section id="title"  class="container">
+            <span>Create New</span>
+            <span>새로운 글은 언제나 환영이에요.</span>
+        </section>  
+    </div>
+    <main id="main">
+        <section  id="container" class="container">
+            <form class="form" action="">
+                <fieldset class="field">
+                    <div class="inputarea">
+                        <input type="text" name="title" id="title" value="" maxlength="30" required placeholder="Title">
+                        <label for="name">Title</label>
+                    </div>
+                    <div class="inputarea">
+                        <textarea name="content" id="content" cols="100" rows="10" required placeholder="내용을 입력해주세요"></textarea>
+                        <label for="content">Content</label>
+                    </div>
+                </fieldset>
+            <div id="buttonarea">
+                <a href="/posts.html" class="button left whitebtn">
+                    <button type="button">CANCEL</button>
+                </a>
+                <a href="#" class="button right">
+                    <button type="submit">POST</button>
+                </a>
+            </div>
+            <div id="zindex1">
+                <p class="radius-button insta">Insta</p>
+                <p class="radius-button blog">BLOG</p>
+                <p class="radius-button github">GitHub</p>
+                <p id="goup" class="radius-button">UP</p>
+                <p id="toggle" class=""><img src="src/img/plus.svg" alt="" width="25px"></p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <!-- <div id="link_area">
+                <ul>
+                    <li><a href="#">email</a></li>
+                    <li><a href="#">twiter</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">git</a></li>
+                </ul>
+            </div> -->
+            <div id="Copyright">
+                <p>Copyright by jeehyun</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/common.js"></script>
+</body>
+</html>

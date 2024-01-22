@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/css/common.css">
+</head>
+<body>
+    <header id="header">
+        <div id="headcontainer" class="container">
+            <div id="logo">
+                <a href="/home.html"><h1>GEEHYUN</h1></a>
+            </div>
+            <nav id="top_menu">
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/aboutme.html">About</a></li>
+                    <li><a href="/posts.html">Posts</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/login.html">LogIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="visual" class="bg">
+        <section id="title"  class="container">
+            <span>Contact</span>
+            <span>제가 궁금하신가요?</span>
+        </section>  
+    </div>
+    <main id="main">
+        <section  id="container" class="container">
+            <p class="contents">궁금한 점을 아래  <span class="point">양식</span>에 작성해주세요.</p>
+            <form class="form" action="">
+                <fieldset class="field">
+                    <div class="inputarea">
+                        <input type="text" name="name" id="name" value="" maxlength="15" required placeholder="이름 (한글 또는 영문만 입력해주세요.)">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="inputarea">
+                        <input type="email" name="email" id="email" value="" maxlength="50" required placeholder="이메일 (wkdwl578@naver.com 형식을 맞춰주세요.)">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="inputarea">
+                        <input type="tel" name="phone" id="phone" value="" maxlength="15" required placeholder="연락처 (010-8467-6191 형식을 맞춰주세요.)">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="inputarea">
+                        <textarea name="message" id="message" cols="100" rows="10" required placeholder="Message"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </fieldset>
+                <div id="buttonarea">
+                    <a href="#" class="button left whitebtn">
+                        <button type="reset">RESET</button>
+                    </a>
+                    <a href="#" id="submit" class="button right">
+                        <button type="submit">SEND</button>
+                    </a>
+                </div>
+            </form>
+            <div id="zindex1">
+                <p class="radius-button insta">Insta</p>
+                <p class="radius-button blog">BLOG</p>
+                <p class="radius-button github">GitHub</p>
+                <p id="goup" class="radius-button">UP</p>
+                <p id="toggle" class=""><img src="src/img/plus.svg" alt="" width="25px"></p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <!-- <div id="link_area">
+                <ul>
+                    <li><a href="#">email</a></li>
+                    <li><a href="#">twiter</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">git</a></li>
+                </ul>
+            </div> -->
+            <div id="Copyright">
+                <p>Copyright by jeehyun</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/common.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+</html>
