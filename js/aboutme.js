@@ -82,7 +82,6 @@ function prevNext(step) {
 
 //몽이 사진 토글
 const monguri = document.querySelectorAll('#monguri li');
-console.log(monguri);
 // monguri.addEventListener('click', () => {
 //   if(monguri.className == 'fold') {
 //     monguri.classList.remove('fold');
@@ -114,17 +113,17 @@ const layerButton = document.querySelector('#layer .button');
 for(let i = 0; i < infoes.length; i++) {
   infoes[i].addEventListener('click', () => {
     let title = (infoes[i].className);
-    toggle();
+    clickMe();
   })
 }
 
 layerButton.addEventListener('click', () => {
-  toggle();
+  clickMe();
 })
 
-function toggle() {
+function clickMe() {
   layerPop.classList.toggle('hidden');
 }
 
-let test = Message.pet.title;
-console.log(test);
+// let test = Message.pet.title;
+// console.log(test);
