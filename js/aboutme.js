@@ -1,3 +1,4 @@
+// import {Message} from "./messages/Message";
 // aboutme 사진 변경
 const profileImaage = ['profile1', 'profile2', 'profile3', 'profile4', 'profile5', 'profile6', 'profile7'];
 
@@ -106,3 +107,24 @@ for(let i = 0; i < monguri.length; i++) {
   })
 }
 
+//info 레이어팝업
+const infoes = document.querySelectorAll('.profile_area .info li');
+const layerPop = document.querySelector('#layer');
+const layerButton = document.querySelector('#layer .button');
+for(let i = 0; i < infoes.length; i++) {
+  infoes[i].addEventListener('click', () => {
+    let title = (infoes[i].className);
+    toggle();
+  })
+}
+
+layerButton.addEventListener('click', () => {
+  toggle();
+})
+
+function toggle() {
+  layerPop.classList.toggle('hidden');
+}
+
+let test = Message.pet.title;
+console.log(test);

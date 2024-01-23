@@ -37,14 +37,15 @@
                     <div class="profile_area">
                         <p id="main_profile" class="profile1"></p>
                         <ul class="info">
-                            <li title="제 이름은 張智現 입니다."><b>이름</b> : 장지현</li>
-                            <li title="1996년생 쥐띠이고, 10월 생이라 천칭자리에요!"><b>생년월일</b> : 1996. 10. 17</li>
-                            <li title="소설을 좋아하고 장르는 편식하지는 않지만, SF소설 또는 추리 소설을 좋아해요!"><b>취미</b> : 책 읽기 / 산책</li>
-                            <li title="할리갈리나 블리츠 처럼 순발력이 필요한 게임들을 잘하는편이에요!"><b>특기</b> : 순발력 게임</li>
-                            <li title="국제통상학! 무역을 전공했습니다."><b>학력</b> : 국제통상학전공 학사 졸업</li>
-                            <li title="카카오톡 아이디는 wkdwl578 이에요!"><b>연락처</b> : 010-8467-6191</li>
-                            <li title="즐겁고 행복하기 위해 살아가고있습니다!"><b>좌우명</b> : 즐겁게 살아가자!</li>
-                            <li title="이름은 몽이인데, 저는 사실 몽구리라고 더 많이 불러요!"><b>반려동물</b> : 몽이(몽구리)</li>
+                            <li class="name" title="제 이름은 張智現 입니다."><b>이름</b> : 장지현</li>
+                            <li class="birth-day" title="1996년생 쥐띠이고, 10월 생이라 천칭자리에요!"><b>생년월일</b> : 1996. 10. 17</li>
+                            <li class="hobby" title="소설을 좋아하고 장르는 편식하지는 않지만, SF소설 또는 추리 소설을 좋아해요!"><b>취미</b> : 책 읽기 / 산책</li>
+                            <li class="speciality" title="할리갈리나 블리츠 처럼 순발력이 필요한 게임들을 잘하는편이에요!"><b>특기</b> : 순발력 게임</li>
+                            <li class="major" title="국제통상학! 무역을 전공했습니다."><b>학력</b> : 국제통상학전공 학사 졸업</li>
+                            <li class="phone" title="카카오톡 아이디는 wkdwl578 이에요!"><b>연락처</b> : 010-8467-6191</li>
+                            <li class="email" title="구글 이메일은 wkdwl578@gmail.com 입니다!"><b>이메일</b> : wkdwl578@naver.com</li>
+                            <li class="motto" title="즐겁고 행복하기 위해 살아가고있습니다!"><b>좌우명</b> : 즐겁게 살아가자!</li>
+                            <li class="pet" title="이름은 몽이인데, 저는 사실 몽구리라고 더 많이 불러요!"><b>반려동물</b> : 몽이(몽구리)</li>
                         </ul>
                         <div class="img-list">
                             <button class="prev">◀</button>
@@ -107,17 +108,31 @@
                 <p id="toggle" class=""><img src="src/img/plus.svg" alt="" width="25px"></p>
             </div>
         </section>
+        <section id="layer" class="hidden">
+            <div id="popup-zone">
+                <div class="pop-head">
+                    <p class="pop-title">제목이 표시됩니다.</p>
+                </div>
+                <div class="pop-body">
+                    <div class="pop-content">
+                        <p class="icon"><img src="/src/img/plus.svg" alt="임시 아이콘"></p>
+                        <p></p>
+                    </div>
+                    <p id="buttonarea"><a class="button center"><button>닫기</button></a></p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer id="footer">
         <div class="container">
-            <!-- <div id="link_area">
+            <div id="link_area" class="hidden">
                 <ul>
                     <li><a href="#">email</a></li>
                     <li><a href="#">twiter</a></li>
                     <li><a href="#">facebook</a></li>
                     <li><a href="#">git</a></li>
                 </ul>
-            </div> -->
+            </div>
             <div id="Copyright">
                 <p>Copyright by jeehyun</p>
             </div>
