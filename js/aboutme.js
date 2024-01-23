@@ -1,4 +1,4 @@
-// import {Message} from "./messages/Message";
+import Message from "./messages/Message.js";
 // aboutme 사진 변경
 const profileImaage = ['profile1', 'profile2', 'profile3', 'profile4', 'profile5', 'profile6', 'profile7'];
 
@@ -125,5 +125,5 @@ function clickMe() {
   layerPop.classList.toggle('hidden');
 }
 
-// let test = Message.pet.title;
-// console.log(test);
+let test = Message.pet.title;
+console.log(test);

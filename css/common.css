@@ -367,7 +367,7 @@ section .align-left {
 
 .profile_area .info li:hover, .profile_area .info li:hover b {
     animation-name: color-change;
-    animation-duration: 0.1s;
+    animation-duration: 0.2s;
     background-color: #2ba7f0;
     color: #fff;
     border-color: #2ba7f0;
