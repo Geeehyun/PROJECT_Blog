@@ -12,7 +12,7 @@ const Message = {
     'title' : '취미 제목',
     'content' : '내용은 아직 생각중입니다....취미....'
   },
-  'specialitty' : {
+  'speciality' : {
     'title' : '특기 제목',
     'content' : '내용은 아직 생각중입니다....특기....'
   },

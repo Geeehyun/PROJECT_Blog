@@ -498,13 +498,26 @@ section .align-left {
 }
 .pop-body .pop-content {
     height: 230px;
-    border: 1px solid pink;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    background-color: #efefef;
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #efefef; */
 }
+
 .pop-content .icon {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    width: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pop-body .pop-content img {
+    width: 100%;
+    vertical-align: middle;
 }
 
 .pop-content p:not(.icon) {

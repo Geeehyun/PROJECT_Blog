@@ -110,9 +110,14 @@ for(let i = 0; i < monguri.length; i++) {
 const infoes = document.querySelectorAll('.profile_area .info li');
 const layerPop = document.querySelector('#layer');
 const layerButton = document.querySelector('#layer .button');
+const popTitle = document.querySelector('.pop-title');
+const popText = document.querySelector('.pop-text');
 for(let i = 0; i < infoes.length; i++) {
   infoes[i].addEventListener('click', () => {
-    let title = (infoes[i].className);
+    let title = (Message[(infoes[i].className)]['title']);
+    let content = (Message[(infoes[i].className)]['content']);
+    popTitle.innerText = title;
+    popText.innerText = content;
     clickMe();
   })
 }
