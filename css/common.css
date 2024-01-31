@@ -464,7 +464,7 @@ section .align-left {
     z-index: 100;
     background-color: #000000b0;
     display: grid;
-    grid-template-columns: 1fr minmax(300px, 600px) 1fr;
+    grid-template-columns: 1fr minmax(300px, 500px) 1fr;
     grid-template-rows: 1fr 350px 1fr;
     grid-template-areas: 
     ". . ."
@@ -489,9 +489,9 @@ section .align-left {
 #popup-zone .pop-body {
     background-color: #fff;
     border-radius: 0 0 15px 15px;
-    height: 300px;
+    height: auto;
     box-sizing: border-box;
-    padding: 15px 25px;
+    padding: 15px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -501,27 +501,39 @@ section .align-left {
     /* border: 1px solid pink; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: space-around;
     /* background-color: #efefef; */
 }
 
-.pop-content .icon {
-    /* border: 1px solid blue; */
+/* .pop-content .icon {
     width: 200px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     padding: 10px;
     box-sizing: border-box;
-}
+} */
 
-.pop-body .pop-content img {
+/* .pop-body .pop-content img {
     width: 100%;
     vertical-align: middle;
 }
-
-.pop-content p:not(.icon) {
+*/
+.pop-text {
     text-align: left;
+    box-sizing: border-box;
+} 
+.pop-text b {
+    text-align: center;
+    display: inline-block;
+    background-color: #fafafa;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #5e5e5e;
+    color: #5e5e5e;
+    margin: -2px 0 5px 0;
 }
 
 .hidden {

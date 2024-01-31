@@ -117,7 +117,7 @@ for(let i = 0; i < infoes.length; i++) {
     let title = (Message[(infoes[i].className)]['title']);
     let content = (Message[(infoes[i].className)]['content']);
     popTitle.innerText = title;
-    popText.innerText = content;
+    popText.innerHTML = content;
     clickMe();
   })
 }
