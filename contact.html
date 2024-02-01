@@ -30,36 +30,38 @@
         </section>  
     </div>
     <main id="main">
-        <section  id="container" class="container">
+        <section id="container" class="container">
             <p class="contents">궁금한 점을 아래  <span class="point">양식</span>에 작성해주세요.</p>
-            <form class="form" action="">
-                <fieldset class="field">
-                    <div class="inputarea">
-                        <input type="text" name="name" id="name" value="" maxlength="15" required placeholder="이름 (한글 또는 영문만 입력해주세요.)">
-                        <label for="name">Name</label>
+            <section class="wrap">
+                <form class="form" action="">
+                    <fieldset class="field">
+                        <div class="inputarea">
+                            <input type="text" name="name" id="name" value="" maxlength="15" required placeholder="이름 (한글 또는 영문만 입력해주세요.)">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="inputarea">
+                            <input type="email" name="email" id="email" value="" maxlength="50" required placeholder="이메일 (wkdwl578@naver.com 형식을 맞춰주세요.)">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="inputarea">
+                            <input type="tel" name="phone" id="phone" value="" maxlength="15" required placeholder="연락처 (010-8467-6191 형식을 맞춰주세요.)">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="inputarea">
+                            <textarea name="message" id="message" cols="100" rows="10" required placeholder="Message"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </fieldset>
+                    <div id="buttonarea">
+                        <a href="#" class="button left whitebtn">
+                            <button type="reset">RESET</button>
+                        </a>
+                        <a href="#" id="submit" class="button right">
+                            <button type="submit">SEND</button>
+                        </a>
                     </div>
-                    <div class="inputarea">
-                        <input type="email" name="email" id="email" value="" maxlength="50" required placeholder="이메일 (wkdwl578@naver.com 형식을 맞춰주세요.)">
-                        <label for="email">Email Address</label>
-                    </div>
-                    <div class="inputarea">
-                        <input type="tel" name="phone" id="phone" value="" maxlength="15" required placeholder="연락처 (010-8467-6191 형식을 맞춰주세요.)">
-                        <label for="phone">Phone Number</label>
-                    </div>
-                    <div class="inputarea">
-                        <textarea name="message" id="message" cols="100" rows="10" required placeholder="Message"></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                </fieldset>
-                <div id="buttonarea">
-                    <a href="#" class="button left whitebtn">
-                        <button type="reset">RESET</button>
-                    </a>
-                    <a href="#" id="submit" class="button right">
-                        <button type="submit">SEND</button>
-                    </a>
-                </div>
-            </form>
+                </form>
+            </section>
             <div id="zindex1">
                 <p class="radius-button insta">Insta</p>
                 <p class="radius-button blog">BLOG</p>
