@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="/css/common.css">
 </head>
 <body>
@@ -25,38 +25,41 @@
     </header>
     <div id="visual" class="bg">
         <section id="title"  class="container">
-            <span>Contact</span>
-            <span>제가 궁금하신가요?</span>
-        </section>  
-    </div>
+            <span class="view title">[TIL] 240108</span>
+            <span class="view">#TIL</span>
+            <span class="view">Geehyun 2024.01.08</span>
+        </section>
+    </div> 
     <main id="main">
         <section id="container" class="container">
-            <p class="contents">궁금한 점을 아래  <span class="point">양식</span>에 작성해주세요.</p>
             <section class="wrap">
-                <form class="form" action="">
-                    <fieldset class="field">
-                        <div class="inputarea">
-                            <input type="text" name="name" id="name" value="" maxlength="15" required placeholder="이름 (한글 또는 영문만 입력해주세요.)"><label for="name">이름</label>
-                        </div>
-                        <div class="inputarea">
-                            <input type="email" name="email" id="email" value="" maxlength="50" required placeholder="이메일 (wkdwl578@naver.com 형식을 맞춰주세요.)"><label for="email">이메일</label>
-                        </div>
-                        <div class="inputarea">
-                            <input type="tel" name="phone" id="phone" value="" maxlength="15" required placeholder="연락처 (010-8467-6191 형식을 맞춰주세요.)"><label for="phone">연락처</label>
-                        </div>
-                        <div class="inputarea">
-                            <textarea name="message" id="message" cols="100" rows="10" required placeholder="Message"></textarea><label for="message">메시지</label>
-                        </div>
-                    </fieldset>
-                    <div id="buttonarea">
-                        <a href="#" class="button left whitebtn">
-                            <button type="reset">RESET</button>
-                        </a>
-                        <a href="#" id="submit" class="button right">
-                            <button type="submit">SEND</button>
-                        </a>
-                    </div>
-                </form>
+                <article class="contents">
+                    <h3>TODAY</h3>
+                    <p>- CSS 평가진행 함 (반응형 제외) - 특정 위치 관련 가상 클래스가 다소 햇갈렸음!</p>
+                    <p>- 반응형 웹 관련하여 미디어 쿼리 연결 방법에 대해 수업 진행</p>
+                    <p>- 반응형에서는 &lt;tabe&gt; 태그 사용하면 안 됨 (반응형에 따라 조절이 안됨)</p>
+                    <p>- 그리드 레이아웃 flexible box layout, CSS grid layout 수업 진행</p>
+                    <br>
+                    <h3>REVIEW</h3>
+                    <p>- CSS 그리드 레이아웃 관련하여 더 공부하면 좋을 것 같아서 코드잇 CSS 레이아웃강의를 들어보고 있다.</p>
+                    <br>
+                    <img class="img" src="/src/img/blog1.png" alt="블로그 이미지" width="500px">
+                    <br>
+                    <h3>TODO</h3>
+                    <p>- 개인 프로젝트 주제 3~5가지 정도 생각하기</p>
+                    <p>- 정보처리기사 필기 시험 준비 (원서접수 : 1/23 ~ 1/26 시험일 : 2/15 ~ 3/7)</p>
+                </article>
+                <div id="buttonarea">
+                    <a href="#" class="button left whitebtn">
+                        <button type="button">◀ PREVIOS POST</button>
+                    </a>
+                    <a href="/posts.html" class="button center">
+                        <button type="button">LIST</button>
+                    </a>
+                    <a href="#" class="button right whitebtn">
+                        <button type="button">NEXT POST ▶</button>
+                    </a>
+                </div>
             </section>
             <div id="zindex1">
                 <p class="radius-button insta">Insta</p>
@@ -83,6 +86,5 @@
         </div>
     </footer>
     <script src="/js/common.js"></script>
-    <script src="/js/contact.js"></script>
 </body>
 </html>

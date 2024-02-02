@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/css/common.css">
+</head>
+<body>
+    <header id="header">
+        <div id="headcontainer" class="container">
+            <div id="logo">
+                <a href="/home.html"><h1>GEEHYUN</h1></a>
+            </div>
+            <nav id="top_menu">
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/aboutme.html">About</a></li>
+                    <li><a href="/posts.html">Posts</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/login.html">LogIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="visual" class="bg">
+        <section id="title"  class="container">
+            <span class="view title">[TIL] 240110</span>
+            <span class="view">#TIL</span>
+            <span class="view">Geehyun 2024.01.10</span>
+        </section>
+    </div> 
+    <main id="main">
+        <section id="container" class="container"> 
+            <section class="wrap">
+                <article class="contents">
+                    <h3>TODAY</h3>
+                    <p><b>주석표시</b></p>
+                    <p>- 짧은 주석의 경우 //내용로 한줄로 표시한다.</p>
+                    <p>- 긴 주석의 경우 /*내용*/으로 표시하는데, 이 때 연산자 * 등이 내용에 있을 경우 주석이 중간에 풀리게 될 수 있으니 사용을 지양하는게 좋다</p>
+                    <p><b>식별자</b></p>
+                    <p>- 변수/상수 선언시 사용되는 식별자에서는 $(달러표시)를 사용할 수 있지만, 현업에서 Jquery 문법과 혼동될 수 있으니 $ 표시는 최대한 사용을 지양하는게 좋다.</p>
+                    <p>- 식별자로 한글을 이용할 수는 있으나, 아래의 문제가 있어 지양하는게 좋다.
+                        <br>① 용량문자 (한글은 최소 2바이트 이상, 영어는 1바이트)
+                        <br>② 인코딩 문제 발생 가능</p>
+                    <p><b>연산자</b></p>
+                    <p>- 연산자의 경우 =기호와 *, +, - 등 다른 연산자 기호와 함께 사용할 때가 많은데 무조건 함께 사용되는 연산자는 =의 좌측에 위치한다.</p>
+                    <p>- 파이썬에서는 //으로 나누기 후 몫을 구해주는 연산자가 별도로 있지만 JS에는 따로 없어서 /으로 값을 구한 후 parseInt(값)으로 정수로 변환해주는 작업이 필요하다.</p>
+                    <p>- 숫자+"문자열"의 경우 +연산자가 더하는 연산자이기도 하지만 문자열끼리 연결시켜주는 연결연산자이기도 하기때문에 숫자형을 자동으로 문자열로 변경해주게 된다.</p>
+                    <p>- 나머지 다른 연산자의 경우 문자열이 포함된 연산의 경우 경우데 따라 아스키 코드로 변환해서 연산됩니다.</p>
+                    <p><b>제어문</b></p>
+                    <p>- if문을 사용할 때는 가능한 else도 함께 써서 예외처리를 해줄 수 있도록 해주는게 좋다.</p>
+                    <p>- while문을 사용할 때는 반드시 반복문을 탈출 할 수 있도록 break등의 탈출점을 만들어줘야합니다.</p>
+                    <br>
+                    <h3>REVIEW</h3>
+                    <p>- CSS 진도가 모두 나갔다. 추가로 필요한 부분은 따로 강의를 들으려고한다.</p>
+                    <p>- JS에 대해 수업을 들으면서 그냥 쓰던 내용들에 대해 왜 그렇게 사용하는지 어떤게 더 올바른 방법인지에 대해 알 수 있었다.</p>
+                    <p>- 특히 연산자에 대한 것은 따로 정리된걸로 공부한적이 없어서 이번기회에 연산자에 대해 공부할 수 있어서 굉장히 흥미로웠다.</p>
+                    <br>
+                    <h3>TODO</h3>
+                    <p>- 개인 프로젝트 주제 3~5가지 정도 생각하기</p>
+                    <p>- 정보처리기사 필기 시험 준비 (원서접수 : 1/23 ~ 1/26 시험일 : 2/15 ~ 3/7)</p>
+                </article>
+                <div id="buttonarea">
+                    <a href="#" class="button left whitebtn">
+                        <button type="button">◀ PREVIOS POST</button>
+                    </a>
+                    <a href="/posts.html" class="button center">
+                        <button type="button">LIST</button>
+                    </a>
+                    <a href="#" class="button right whitebtn">
+                        <button type="button">NEXT POST ▶</button>
+                    </a>
+                </div>
+            </section>
+            <div id="zindex1">
+                <p class="radius-button insta">Insta</p>
+                <p class="radius-button blog">BLOG</p>
+                <p class="radius-button github">GitHub</p>
+                <p id="goup" class="radius-button">UP</p>
+                <p id="toggle" class=""><img src="src/img/plus.svg" alt="" width="25px"></p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <!-- <div id="link_area">
+                <ul>
+                    <li><a href="#">email</a></li>
+                    <li><a href="#">twiter</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">git</a></li>
+                </ul>
+            </div> -->
+            <div id="Copyright">
+                <p>Copyright by jeehyun</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/common.js"></script>
+</body>
+</html>
